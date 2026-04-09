@@ -165,8 +165,8 @@ const Hero = () => {
               fontWeight: 800,
             }}
           >
-            {heroData.title.split("Future")[0]}
-            <span className="text-gradient">Future</span>
+            {heroData.title.split("Many roles")[0]}
+            <span className="text-gradient">Many roles</span>
           </h1>
 
           <p
@@ -225,7 +225,7 @@ const Hero = () => {
                 border: "8px solid #1a1a1a",
                 overflow: "hidden",
                 boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)",
-                position: "relative"
+                position: "relative",
               }}
             >
               <video
@@ -237,7 +237,7 @@ const Hero = () => {
                 style={{
                   width: "100%",
                   height: "100%",
-                  objectFit: "cover"
+                  objectFit: "cover",
                 }}
               />
             </motion.div>

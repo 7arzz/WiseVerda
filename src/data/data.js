@@ -6,7 +6,7 @@ import heroVideo from "../assets/vid.mp4";
 export const brandData = {
   name: "WiseVerda",
   logo: Logo,
-  slogan: "Digital Innovation Hub",
+  slogan: "WiseVerda Company",
 };
 
 export const navLinks = [
@@ -17,9 +17,8 @@ export const navLinks = [
 ];
 
 export const heroData = {
-  title: "Pioneering the Future",
-  subtitle:
-    "Pioneering the future of sustainable digital experiences. We build high-performance, eco-conscious solutions for visionary brands.",
+  title: "One board Many roles",
+  subtitle: "One solution for writing, storage, and document organization",
   showcaseVideo: heroVideo,
   stats: {
     score: "99%",
