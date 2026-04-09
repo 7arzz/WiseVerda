@@ -210,7 +210,7 @@ const About = () => {
               transition={{ duration: 4, repeat: Infinity }}
               style={{
                 position: "absolute",
-                bottom: "40px",
+                bottom: "-50px",
                 right: "-20px",
                 background: "white",
                 padding: "24px",
