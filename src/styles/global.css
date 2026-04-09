@@ -7,12 +7,12 @@
   --primary-light: #f0fdfa;
   --primary-soft: rgba(87, 234, 190, 0.1);
   --primary-dark: #3ec99d;
-  
+
   --secondary: #033f63;
   --secondary-deep: #022a42;
   --secondary-soft: rgba(3, 63, 99, 0.05);
   --secondary-glow: rgba(3, 63, 99, 0.4);
-  
+
   --accent: #ffd700; /* gold */
   --accent-glow: rgba(255, 215, 0, 0.3);
 
@@ -22,11 +22,11 @@
   --bg-dark: #033f63;
   --bg-deep: #022a42;
   --bg-glass: rgba(255, 255, 255, 0.8);
-  
+
   --text-main: #033f63;
   --text-muted: #64748b;
   --text-inverse: #ffffff;
-  
+
   --border-light: rgba(3, 63, 99, 0.08);
   --border-glass: rgba(255, 255, 255, 0.2);
 
@@ -39,7 +39,7 @@
   --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-  
+
   --transition-base: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-bounce: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
@@ -49,11 +49,12 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 html,
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   background-color: var(--bg-main);
   color: var(--text-main);
   line-height: 1.6;
@@ -63,16 +64,27 @@ body {
 }
 
 /* TYPOGRAPHY */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.03em;
   color: var(--secondary);
 }
 
-h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); }
-h2 { font-size: clamp(2rem, 5vw, 3.5rem); }
-h3 { font-size: clamp(1.5rem, 3vw, 2.5rem); }
+h1 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+}
+h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
 
 p {
   font-size: 1.125rem;
@@ -191,15 +203,32 @@ section {
 }
 
 @media (max-width: 768px) {
-  .container { padding: 0 24px; }
-  section { padding: 80px 0; }
-  h1 { font-size: clamp(2.2rem, 10vw, 3.5rem); }
-  h2 { font-size: clamp(1.8rem, 8vw, 2.8rem); }
-  .btn { width: 100%; padding: 14px 24px; }
+  .container {
+    padding: 0 24px;
+  }
+  section {
+    padding: 80px 0;
+  }
+  h1 {
+    font-size: clamp(2.2rem, 10vw, 3.5rem);
+  }
+  h2 {
+    font-size: clamp(1.8rem, 8vw, 2.8rem);
+  }
+  .btn {
+    width: 100%;
+    padding: 14px 24px;
+  }
 }
 
 @media (max-width: 480px) {
-  section { padding: 60px 0; }
-  .container { padding: 0 16px; }
-  h1 { font-size: 2.2rem !important; }
+  section {
+    padding: 60px 0;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  h1 {
+    font-size: 2.2rem !important;
+  }
 }

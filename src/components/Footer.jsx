@@ -96,7 +96,9 @@ const Footer = () => {
             {footerData.bottomLinks.map((link, i) => (
               <a key={i} href={link.href}>{link.name}</a>
             ))}
-            <a href="#" className="footer-status">{footerData.status}</a>
+            {footerData.status && (
+              <a href="#" className="footer-status">{footerData.status}</a>
+            )}
           </div>
         </div>
       </div>

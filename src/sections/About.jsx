@@ -192,37 +192,17 @@ const About = () => {
             transition={{ duration: 0.8 }}
             style={{ position: "relative" }}
           >
-            <div
+            <img
+              src={aboutData.image}
+              alt="Foto Bersama"
               style={{
                 width: "100%",
-                aspectRatio: "4/5",
-                background: "var(--primary)",
+                aspectRatio: "16/9",
+                objectFit: "cover",
                 borderRadius: "var(--radius-lg)",
-                overflow: "hidden",
-                position: "relative",
+                boxShadow: "var(--shadow-md)",
               }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  background:
-                    "linear-gradient(to bottom right, var(--primary), var(--accent))",
-                  mixBlendMode: "overlay",
-                  opacity: 0.5,
-                }}
-              ></div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  height: "100%",
-                }}
-              >
-                <GlobeIcon size={180} color="white" opacity={0.1} />
-              </div>
-            </div>
+            />
 
             {/* Floating stat card */}
             <motion.div

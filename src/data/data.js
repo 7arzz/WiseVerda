@@ -1,6 +1,7 @@
 import Logo from "../assets/logo.jpg";
 import blackFoldex from "../assets/product/blackFoldex.jpg";
 import blueFoldex from "../assets/product/blueFoldex.jpg";
+import softPinkFoldex from "../assets/product/softPinkFoldex.jpg";
 import heroVideo from "../assets/vid.mp4";
 
 export const brandData = {
@@ -17,7 +18,7 @@ export const navLinks = [
 ];
 
 export const heroData = {
-  title: "One board Many roles",
+  title: "Smart Innovation for Productivity",
   subtitle: "One solution for writing, storage, and document organization",
   showcaseVideo: heroVideo,
   stats: {
@@ -29,34 +30,45 @@ export const heroData = {
 export const productsSection = {
   title: "Our Premium Products",
   subtitle:
-    "Discover our curated selection of digital and sustainable solutions designed to propel your brand forward.",
+    "Make your choice from the products we have designed to enhance your personality.",
 };
 
 export const productsData = [
   {
     id: 1,
     name: "FoldeX Hitam",
-    price: 65000,
-    description: "FoldeX Hitam",
+    price: 67500,
+    description: "Black FoldeX ",
     image: blackFoldex,
     isNew: false,
   },
   {
     id: 2,
     name: "FoldeX biru",
-    price: 65000,
-    description: "FoldeX biru",
+    price: 67500,
+    description: "Blue FoldeX",
     image: blueFoldex,
+    isNew: true,
+  },
+  {
+    id: 3,
+    name: "FoldeX Soft Pink",
+    price: 67500,
+    description: "Soft Pink FoldeX",
+    image: softPinkFoldex,
     isNew: true,
   },
 ];
 
+import fotoBersama from "../assets/product/fotoBersama.jpg";
+
 export const aboutData = {
   title: "About Us",
+  image: fotoBersama,
   description:
     "It is a Student Company that focuses on developing environmental awareness, green innovation, and youth leadership. This company was formed as a forum for learning, collaboration, and creating creative solutions to sustainability issues.",
   mainStat: {
-    value: "2+",
+    value: "3+",
     label: "Month of Innovation",
   },
   features: [
@@ -81,7 +93,7 @@ export const contactData = {
 
 export const footerData = {
   description:
-    "Architecting the next generation of modular digital ecosystems. We combine high-performance infrastructure with sustainable design principles.",
+    "We will be a generation of pioneers who actively contribute to ecological awareness and sustainable innovation.",
   socials: [
     {
       platform: "Instagram",
@@ -91,30 +103,16 @@ export const footerData = {
   ],
   columns: [
     {
-      title: "Ecosystem",
-      links: [
-        { name: "Infrastructure", href: "#" },
-        { name: "Edge Computing", href: "#" },
-        { name: "Modular APIs", href: "#" },
-        { name: "Security", href: "#" },
-        { name: "Compliance", href: "#" },
-      ],
-    },
-    {
       title: "Company",
       links: [
-        { name: "About Strategy", href: "#" },
-        { name: "Network Status", href: "#" },
-        { name: "Research", href: "#" },
-        { name: "Contact Support", href: "#" },
-        { name: "Sustainability", href: "#" },
+        { name: "About Us", href: "#about" },
+        { name: "Products", href: "#products" },
+        { name: "Contact", href: "#contact" },
+        { name: "Hero", href: "#" },
       ],
     },
   ],
-  bottomLinks: [
-    { name: "Privacy Shield", href: "#" },
-    { name: "Terms of Service", href: "#" },
-  ],
+  bottomLinks: [{ name: "Terms of Service", href: "#" }],
   copyright: "© 2024 WiseVerda Systems. All rights reserved.",
   status: "System Status: Operational",
 };

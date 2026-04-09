@@ -165,8 +165,8 @@ const Hero = () => {
               fontWeight: 800,
             }}
           >
-            {heroData.title.split("Many roles")[0]}
-            <span className="text-gradient">Many roles</span>
+            {heroData.title.split("Productivity")[0]}
+            <span className="text-gradient">Productivity</span>
           </h1>
 
           <p
