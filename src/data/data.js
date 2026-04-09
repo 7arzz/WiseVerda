@@ -86,7 +86,7 @@ export const contactData = {
   title: "Ready to Upgrade Your Personality?",
   subtitle: "Our team is ready to bring your vision to life.",
   email: "wiseverda.studentcompany19@gmail.com",
-  whatsapp: "6281882807663",
+  whatsapp: "6289676947370",
   location: "Sidoarjo, Indonesia",
   liveChat: "Active 24/7",
 };
