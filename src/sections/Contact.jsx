@@ -38,6 +38,7 @@ const Contact = () => {
            initial={{ opacity: 0, y: 40 }}
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
+           className="contact-card"
            style={{
              background: 'var(--bg-dark)',
              borderRadius: 'var(--radius-lg)',
@@ -76,7 +77,7 @@ const Contact = () => {
               {contactData.subtitle}
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '40px', marginBottom: '64px' }}>
+            <div className="contact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '40px', marginBottom: '64px' }}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
                 <div style={{ padding: '16px', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', color: 'var(--primary)' }}>
                   <MailIcon size={28} />
@@ -112,6 +113,17 @@ const Contact = () => {
           </div>
         </motion.div>
       </div>
+      <style>{`
+        @media (max-width: 768px) {
+          .contact-card {
+            padding: 40px 20px !important;
+          }
+          .contact-grid {
+            gap: 24px !important;
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </section>
   );
 };

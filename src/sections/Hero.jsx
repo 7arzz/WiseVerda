@@ -81,8 +81,8 @@ const Hero = () => {
           position: "absolute",
           top: "-10%",
           right: "-10%",
-          width: "800px",
-          height: "800px",
+          width: "min(800px, 100vw)",
+          height: "min(800px, 100vw)",
           background:
             "radial-gradient(circle, var(--primary) 0%, transparent 70%)",
           borderRadius: "50%",
@@ -99,8 +99,8 @@ const Hero = () => {
           position: "absolute",
           bottom: "-10%",
           left: "-10%",
-          width: "600px",
-          height: "600px",
+          width: "min(600px, 100vw)",
+          height: "min(600px, 100vw)",
           background:
             "radial-gradient(circle, var(--accent) 0%, transparent 70%)",
           borderRadius: "50%",
@@ -253,6 +253,7 @@ const Hero = () => {
 
           {/* Decorative floating cards */}
           <motion.div
+            className="floating-card-1"
             animate={{ y: [0, -15, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             style={{
@@ -296,6 +297,7 @@ const Hero = () => {
           </motion.div>
 
           <motion.div
+            className="floating-card-2"
             animate={{ y: [0, 15, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             style={{

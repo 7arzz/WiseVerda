@@ -73,6 +73,7 @@ const Cart = () => {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+            className="cart-drawer"
             style={{
               position: 'fixed',
               top: 0,
@@ -112,6 +113,7 @@ const Cart = () => {
                     <motion.div 
                       layout
                       key={`${item.id}-${index}`}
+                      className="cart-item"
                       style={{ 
                         display: 'flex', 
                         gap: '20px', 
@@ -165,6 +167,17 @@ const Cart = () => {
           </motion.div>
         </>
       )}
+      <style>{`
+        @media (max-width: 480px) {
+          .cart-drawer {
+            padding: 24px 16px !important;
+          }
+          .cart-item {
+            gap: 12px !important;
+            padding: 12px !important;
+          }
+        }
+      `}</style>
     </AnimatePresence>
   );
 };
