@@ -189,33 +189,7 @@ const Hero = () => {
               justifyContent: "center",
               flexWrap: "wrap",
             }}
-          >
-            <motion.button
-              whileHover={{ scale: 1.05, y: -4 }}
-              whileTap={{ scale: 0.95 }}
-              className="btn btn-primary"
-              style={{
-                fontSize: "18px",
-                padding: "18px 48px",
-                boxShadow: "0 15px 30px var(--primary-glow)",
-              }}
-            >
-              {heroData.primaryButtonText} <ArrowRightIcon size={20} />
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05, background: "rgba(255,255,255,0.1)" }}
-              whileTap={{ scale: 0.95 }}
-              className="btn btn-outline"
-              style={{
-                fontSize: "18px",
-                padding: "18px 48px",
-                border: "2px solid rgba(255,255,255,0.2)",
-                color: "white",
-              }}
-            >
-              {heroData.secondaryButtonText}
-            </motion.button>
-          </div>
+          ></div>
         </motion.div>
 
         {/* Floating Mockup / Elements */}
@@ -228,28 +202,45 @@ const Hero = () => {
             marginTop: "80px",
             width: "100%",
             maxWidth: "1000px",
-            height: "400px",
-            background: "var(--bg-sub)",
+            minHeight: "600px",
+            background: "transparent",
             borderRadius: "var(--radius-lg)",
-            border: "8px solid var(--bg-main)",
-            boxShadow: "var(--shadow-lg)",
             position: "relative",
             margin: "80px auto 0",
-            display: "var(--show-showcase, flex)",
+            display: "flex",
             alignItems: "center",
             justifyContent: "center",
           }}
         >
           <div style={{ textAlign: "center" }}>
             <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              style={{
+                width: "280px",
+                height: "500px",
+                background: "#000",
+                borderRadius: "32px",
+                border: "8px solid #1a1a1a",
+                overflow: "hidden",
+                boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)",
+                position: "relative"
+              }}
             >
-              <LeafIcon size={100} color="var(--primary)" opacity={0.1} />
+              <video
+                src={heroData.showcaseVideo}
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover"
+                }}
+              />
             </motion.div>
-            <p style={{ color: "var(--text-muted)", marginTop: "20px" }}>
-              {heroData.showcaseText}
-            </p>
           </div>
 
           {/* Decorative floating cards */}
@@ -259,8 +250,8 @@ const Hero = () => {
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             style={{
               position: "absolute",
-              top: "-40px",
-              right: "40px",
+              top: "20px",
+              right: "220px",
               padding: "20px",
               width: "200px",
               background: "white",
@@ -303,8 +294,8 @@ const Hero = () => {
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             style={{
               position: "absolute",
-              bottom: "40px",
-              left: "-40px",
+              bottom: "60px",
+              left: "220px",
               padding: "24px",
               background: "var(--primary)",
               color: "white",

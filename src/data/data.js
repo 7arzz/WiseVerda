@@ -1,6 +1,7 @@
 import Logo from "../assets/logo.jpg";
 import blackFoldex from "../assets/product/blackFoldex.jpg";
 import blueFoldex from "../assets/product/blueFoldex.jpg";
+import heroVideo from "../assets/vid.mp4";
 
 export const brandData = {
   name: "WiseVerda",
@@ -19,9 +20,7 @@ export const heroData = {
   title: "Pioneering the Future",
   subtitle:
     "Pioneering the future of sustainable digital experiences. We build high-performance, eco-conscious solutions for visionary brands.",
-  primaryButtonText: "Start Your Journey",
-  secondaryButtonText: "View Ecosystem",
-  showcaseText: "[ Interactive Showcase Placeholder ]",
+  showcaseVideo: heroVideo,
   stats: {
     score: "99%",
     label: "Sustainability Score",
@@ -54,28 +53,30 @@ export const productsData = [
 ];
 
 export const aboutData = {
-  title: "Our Green Philosophy",
+  title: "About Us",
   description:
-    "At WiseVerda, we believe that digital growth shouldn't come at the cost of our planet. We specialize in building carbon-neutral web experiences, optimized architectures, and inclusive designs that stand the test of time.",
+    "It is a Student Company that focuses on developing environmental awareness, green innovation, and youth leadership. This company was formed as a forum for learning, collaboration, and creating creative solutions to sustainability issues.",
   mainStat: {
     value: "2+",
     label: "Month of Innovation",
   },
   features: [
-    { title: "Secure", desc: "Enterprise-grade security" },
-    { title: "Fast", desc: "Optimized for speed" },
-    { title: "Sustainable", desc: "Eco-friendly infrastructure" },
+    { title: "Integrity" },
+    { title: "Productivity" },
+    { title: "Responsibility" },
+    { title: "Innovation" },
+    { title: "Collaboration" },
+    { title: "Awareness" },
   ],
 };
 
 export const contactData = {
   badge: "Contact Us",
-  title: "Ready to Upgrade Your Business?",
-  subtitle:
-    "Let's collaborate on your next digital project. Our team is ready to bring your vision to life.",
-  email: "hello@wiseverda.com",
+  title: "Ready to Upgrade Your Personality?",
+  subtitle: "Our team is ready to bring your vision to life.",
+  email: "wiseverda.studentcompany19@gmail.com",
   whatsapp: "6281234567890",
-  location: "Jakarta, Indonesia",
+  location: "Sidoarjo, Indonesia",
   liveChat: "Active 24/7",
 };
 
@@ -83,8 +84,11 @@ export const footerData = {
   description:
     "Architecting the next generation of modular digital ecosystems. We combine high-performance infrastructure with sustainable design principles.",
   socials: [
-    { platform: "Instagram", href: "#" },
-    { platform: "Tiktok", href: "#" },
+    {
+      platform: "Instagram",
+      href: "https://www.instagram.com/foldex.wiseverda/",
+    },
+    { platform: "Tiktok", href: "https://www.tiktok.com/@foldex.wiseverda" },
   ],
   columns: [
     {
