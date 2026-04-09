@@ -165,7 +165,8 @@ const Hero = () => {
               fontWeight: 800,
             }}
           >
-            {heroData.title.split('Future')[0]}<span className="text-gradient">Future</span>
+            {heroData.title.split("Future")[0]}
+            <span className="text-gradient">Future</span>
           </h1>
 
           <p
@@ -311,7 +312,9 @@ const Hero = () => {
               boxShadow: "var(--shadow-md)",
             }}
           >
-            <h4 style={{ color: "white", marginBottom: "4px" }}>{heroData.stats.score}</h4>
+            <h4 style={{ color: "white", marginBottom: "4px" }}>
+              {heroData.stats.score}
+            </h4>
             <p style={{ fontSize: "12px", opacity: 0.8 }}>
               {heroData.stats.label}
             </p>

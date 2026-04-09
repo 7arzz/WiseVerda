@@ -1,4 +1,6 @@
 import Logo from "../assets/logo.jpg";
+import blackFoldex from "../assets/product/blackFoldex.jpg";
+import blueFoldex from "../assets/product/blueFoldex.jpg";
 
 export const brandData = {
   name: "WiseVerda",
@@ -35,50 +37,18 @@ export const productsSection = {
 export const productsData = [
   {
     id: 1,
-    name: "Foldex biru",
+    name: "FoldeX Hitam",
     price: 65000,
-    description: "Folder X biru",
-    image: null,
-    isNew: true,
+    description: "FoldeX Hitam",
+    image: blackFoldex,
+    isNew: false,
   },
   {
     id: 2,
-    name: "Foldex Merah",
+    name: "FoldeX biru",
     price: 65000,
-    description: "Folder X Merah",
-    image: null,
-    isNew: true,
-  },
-  {
-    id: 3,
-    name: "Foldex Hitam",
-    price: 65000,
-    description: "Folder X biru",
-    image: null,
-    isNew: true,
-  },
-  {
-    id: 4,
-    name: "Foldex Kuning",
-    price: 65000,
-    description: "Folder X Kuning",
-    image: null,
-    isNew: true,
-  },
-  {
-    id: 5,
-    name: "Foldex Hijau",
-    price: 65000,
-    description: "Folder X Hijau",
-    image: null,
-    isNew: true,
-  },
-  {
-    id: 6,
-    name: "Foldex Putih",
-    price: 65000,
-    description: "Folder X Putih",
-    image: null,
+    description: "FoldeX biru",
+    image: blueFoldex,
     isNew: true,
   },
 ];
@@ -88,8 +58,8 @@ export const aboutData = {
   description:
     "At WiseVerda, we believe that digital growth shouldn't come at the cost of our planet. We specialize in building carbon-neutral web experiences, optimized architectures, and inclusive designs that stand the test of time.",
   mainStat: {
-    value: "10+",
-    label: "Years of Innovation",
+    value: "2+",
+    label: "Month of Innovation",
   },
   features: [
     { title: "Secure", desc: "Enterprise-grade security" },
@@ -114,9 +84,7 @@ export const footerData = {
     "Architecting the next generation of modular digital ecosystems. We combine high-performance infrastructure with sustainable design principles.",
   socials: [
     { platform: "Instagram", href: "#" },
-    { platform: "Twitter", href: "#" },
-    { platform: "Linkedin", href: "#" },
-    { platform: "Facebook", href: "#" },
+    { platform: "Tiktok", href: "#" },
   ],
   columns: [
     {
